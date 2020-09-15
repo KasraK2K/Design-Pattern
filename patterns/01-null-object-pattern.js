@@ -33,11 +33,9 @@ function printUser(id) {
   if (user != null && user.name != null) name = user.name;
   console.log("Hello " + name);
 
-  if (user != null && user.hasAccess != null && user.hasAccess() != null) {
+  if (user != null && user.hasAccess != null && user.hasAccess()) {
     console.log("You have access");
   } else {
     console.log("You are not allowed here");
   }
 }
-
-printUser(3);

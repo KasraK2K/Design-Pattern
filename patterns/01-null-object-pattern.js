@@ -1,3 +1,7 @@
+// Null Object Design Pattern
+// in this pattern we create a null object to have a method and property but az null
+// this pattern helped us to avoid null check in rest of code
+
 class User {
   constructor(id, name) {
     this.id = id;
@@ -26,6 +30,7 @@ function getUser(id) {
   else return user;
 }
 
+// in this function we can avoid null checking because we using null object pattern
 function printUser(id) {
   const user = getUser(id);
 
